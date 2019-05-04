@@ -1,6 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { GridProvider } from '~/components/grid';
+import GridProvider from '~/components/grid/GridProvider';
 import Page from './components/Page/Page';
 
 const App = ({ store, history }) => (

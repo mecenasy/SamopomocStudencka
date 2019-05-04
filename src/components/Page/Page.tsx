@@ -3,8 +3,7 @@ import { Container } from 'react-bootstrap';
 import { Router, Route, Switch } from 'react-router';
 import Header from '../Header/Header';
 import Content from '../Content/Content';
-
-const dupa = () => (<div>jhsgsjkdfhgsfjkshgfjskdfhgsjkdfhgsjfkhgsfd</div>);
+import StartPage from './StartPage';
 
 const Page: FC<{ history: any; }> = ({
    history }) => (
@@ -12,7 +11,7 @@ const Page: FC<{ history: any; }> = ({
          <Container>
             <Header />
             <Switch>
-               <Route path={'/'} exact component={dupa} />
+               <Route path={'/'} exact component={StartPage} />
                <Route path={'/:id'} component={Content} />
             </Switch>
          </Container>

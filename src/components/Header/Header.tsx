@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { connect, Dispatch } from 'react-redux';
 import { Box } from '@rebass/grid';
-import { NavDropdown, Nav } from 'react-bootstrap';
+import { Dropdown } from 'react-bootstrap';
 
 import { ApplicationState } from '~/store/ApplicationState';
 import { getMenuRequests as getMenuRequest } from '~/store/actions/menu';
@@ -35,8 +35,11 @@ class Header extends React.Component<HeaderProps, { showModal: boolean }> {
             <P.Navbar sticky={'top'} variant="dark" bg="primary">
                <P.Header flexWrap={'wrap'}>
                   <Box width={[1 / 2, 1 / 2, 1 / 2, 1 / 2, 1 / 4]} order={[2, 2, 2, 2, 1]}>
-                     <Nav className="mr-auto">
-                        <NavDropdown title="Menu" id="collasible-nav-dropdown">
+                     <Dropdown>
+                        <Dropdown.Toggle variant="success" id="dropdown-basic">
+                           Menu
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
                            {menu && menu.map((item, index) => (
                               <P.Link
                                  key={item.id + index}
@@ -45,10 +48,10 @@ class Header extends React.Component<HeaderProps, { showModal: boolean }> {
                                  {item.title}
                               </P.Link>
                            ))}
-                           <NavDropdown.Divider />
+                           <Dropdown.Divider />
                            <P.Link to={'/all'}>Wszystkie</P.Link>
-                        </NavDropdown>
-                     </Nav>
+                        </Dropdown.Menu>
+                     </Dropdown>
                   </Box>
                   <Box width={[1, 1, 1, 1, 1 / 2]} order={[1, 1, 1, 1, 2]}>
                      <P.Title>Portal samopomocy stydenckiej</P.Title>
