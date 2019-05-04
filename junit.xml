@@ -1,0 +1,54 @@
+<testsuites name="jest tests" tests="25" failures="0" time="7.104">
+  <testsuite name="installments" errors="0" failures="0" skipped="0" timestamp="2018-10-03T10:36:52" time="3.387" tests="25">
+    <testcase classname="installments should display loader if installmentsSettings are empty" name="installments should display loader if installmentsSettings are empty" time="0.131">
+    </testcase>
+    <testcase classname="installments should not set state when receive new props and state is already set" name="installments should not set state when receive new props and state is already set" time="0.068">
+    </testcase>
+    <testcase classname="installments should display ModalLayout with title “Kalkulator rat”" name="installments should display ModalLayout with title “Kalkulator rat”" time="0.014">
+    </testcase>
+    <testcase classname="installments should display Product Image Title" name="installments should display Product Image Title" time="0.013">
+    </testcase>
+    <testcase classname="installments should display installments info text “Pamiętaj, że powyższa kalkulacja ma charakter orientacyjny. Parametry oferty dostępnej dla Ciebie będą uzależnione od oceny Twojej zdolności kredytowej i decyzji Banku. Jeśli interesuje Cię kredyt w kwocie powyżej 20 tys. zł, skontaktuj się z nami.” (text „skontaktuj się z nami” is a link)" name="installments should display installments info text “Pamiętaj, że powyższa kalkulacja ma charakter orientacyjny. Parametry oferty dostępnej dla Ciebie będą uzależnione od oceny Twojej zdolności kredytowej i decyzji Banku. Jeśli interesuje Cię kredyt w kwocie powyżej 20 tys. zł, skontaktuj się z nami.” (text „skontaktuj się z nami” is a link)" time="0.012">
+    </testcase>
+    <testcase classname="installments value of order should display text “Wartość zamówienia:”" name="installments value of order should display text “Wartość zamówienia:”" time="0.016">
+    </testcase>
+    <testcase classname="installments value of order should display price text-input with placeholder {product price in format 000,00} and static placeholder “zł”" name="installments value of order should display price text-input with placeholder {product price in format 000,00} and static placeholder “zł”" time="0.013">
+    </testcase>
+    <testcase classname="installments value of order should set input text to product price if the input is empty and lost focus" name="installments value of order should set input text to product price if the input is empty and lost focus" time="0.027">
+    </testcase>
+    <testcase classname="installments value of order should set input value to product price if user enter character which is not a positive number" name="installments value of order should set input value to product price if user enter character which is not a positive number" time="0.02">
+    </testcase>
+    <testcase classname="installments first deposit should display text “Wysokość wpłaty własnej:”" name="installments first deposit should display text “Wysokość wpłaty własnej:”" time="0.012">
+    </testcase>
+    <testcase classname="installments first deposit should display own-payment text-input with placeholder {default own-payment is 0 - in format 000} and static placeholder “zł”" name="installments first deposit should display own-payment text-input with placeholder {default own-payment is 0 - in format 000} and static placeholder “zł”" time="0.014">
+    </testcase>
+    <testcase classname="installments first deposit should display own-payment control seekbar" name="installments first deposit should display own-payment control seekbar" time="0.012">
+    </testcase>
+    <testcase classname="installments first deposit should manipulate own-payment text-input from 0,00 to {product price from price text-input}" name="installments first deposit should manipulate own-payment text-input from 0,00 to {product price from price text-input}" time="0.03">
+    </testcase>
+    <testcase classname="installments first deposit should set input value to default first deposit value if user enter character which is not a positive number" name="installments first deposit should set input value to default first deposit value if user enter character which is not a positive number" time="0.015">
+    </testcase>
+    <testcase classname="installments number of installments should display text “Liczba rat:”" name="installments number of installments should display text “Liczba rat:”" time="0.011">
+    </testcase>
+    <testcase classname="installments number of installments should display default number of installments" name="installments number of installments should display default number of installments" time="0.013">
+    </testcase>
+    <testcase classname="installments number of installments should display installments-amount control seekbar" name="installments number of installments should display installments-amount control seekbar" time="0.012">
+    </testcase>
+    <testcase classname="installments number of installments should manipulate installments-amount text input from minimumInstallmentNumber to maximumInstallmentNumber" name="installments number of installments should manipulate installments-amount text input from minimumInstallmentNumber to maximumInstallmentNumber" time="0.04">
+    </testcase>
+    <testcase classname="installments number of installments should set input value to default number of installments if user enter character which is not a positive number" name="installments number of installments should set input value to default number of installments if user enter character which is not a positive number" time="0.011">
+    </testcase>
+    <testcase classname="installments number of installments installments summary should display text “Wysokość raty:”" name="installments number of installments installments summary should display text “Wysokość raty:”" time="0.01">
+    </testcase>
+    <testcase classname="installments number of installments installments summary should display text “{installments amount in format 000,00} zł”" name="installments number of installments installments summary should display text “{installments amount in format 000,00} zł”" time="0.01">
+    </testcase>
+    <testcase classname="installments number of installments installments summary should display text &quot;---&quot; if installments amount is out of boundaries" name="installments number of installments installments summary should display text &quot;---&quot; if installments amount is out of boundaries" time="0.021">
+    </testcase>
+    <testcase classname="installments number of installments installments summary should display text &quot;---&quot; if installments amount is higher than the product price" name="installments number of installments installments summary should display text &quot;---&quot; if installments amount is higher than the product price" time="0.015">
+    </testcase>
+    <testcase classname="installments number of installments checkIfValidInput should check if inputs have a valid values" name="installments number of installments checkIfValidInput should check if inputs have a valid values" time="0.012">
+    </testcase>
+    <testcase classname="formatPrice function should parse prices to a proper format (with 2 decimal numbers)" name="formatPrice function should parse prices to a proper format (with 2 decimal numbers)" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>
