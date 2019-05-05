@@ -1,7 +1,7 @@
 {
-   "name": "Suszi",
+   "name": "Samopomoc_studencka",
    "version": "1.0.0",
-   "description": "Suszi",
+   "description": "Samopomoc studencka",
    "engines": {
       "node": ">8.0.0",
       "npm": ">6.0.0"
@@ -9,12 +9,10 @@
    "scripts": {
       "dev-server": "cross-env TS_NODE_PROJECT=\"tsconfig-ts-node.json\" webpack-dev-server --config webpack/dev.ts --color",
       "start": "npm-run-all --parallel dev-server",
-      "start-all": "npm-run-all --parallel start-server dev-server",
       "start-server": "npm-run-all --parallel server api",
       "server": "node ./server/server.js",
       "test": "jest --coverage",
       "test:watch": "jest --watch",
-      "api2": "json-server --watch ./tools/api/db.js",
       "api": "node ./tools/api/apiServer.js",
       "tsc": "./node_modules/.bin/tsc -p . --noEmit"
    },
