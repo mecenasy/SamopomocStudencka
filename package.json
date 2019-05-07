@@ -8,7 +8,7 @@
    },
    "scripts": {
       "dev-server": "cross-env TS_NODE_PROJECT=\"tsconfig-ts-node.json\" webpack-dev-server --config webpack/dev.ts --color",
-      "start": "npm-run-all --parallel dev-server",
+      "start": "npm-run-all --parallel dev-server server api",
       "start-server": "npm-run-all --parallel server api",
       "server": "node ./server/server.js",
       "test": "jest --coverage",
